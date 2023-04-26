@@ -1,3 +1,54 @@
-.current {
-  color: green;
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#maxx-img {
+  animation: 2s ease-out 0s 1 slideInLeft;
+}
+
+footer {
+  bottom: 0;
+  margin-bottom: 5px;
+  position:fixed;
+  justify-content:center;
+  width:100%;
+  display:flex;
+  align-items:center;
+}
+
+.container-fluid {
+  padding-right: 0 !important;
+}
+
+header {
+    background-image: linear-gradient(
+    180deg,
+    hsl(240deg 100% 20%) 30%,
+    hsl(238deg 88% 20%) 49%,
+    hsl(235deg 78% 20%) 56%,
+    hsl(233deg 69% 20%) 62%,
+    hsl(231deg 60% 20%) 66%,
+    hsl(228deg 53% 20%) 70%,
+    hsl(226deg 46% 20%) 74%,
+    hsl(224deg 40% 19%) 78%,
+    hsl(222deg 34% 19%) 81%,
+    hsl(219deg 28% 18%) 85%,
+    hsl(217deg 24% 17%) 89%,
+    hsl(215deg 19% 17%) 92%,
+    hsl(212deg 15% 16%) 96%,
+    hsl(210deg 11% 15%) 100%
+  );
+}
+
+#cover {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin:auto;
+  margin-top:15%;
 }
